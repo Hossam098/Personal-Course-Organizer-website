@@ -147,6 +147,6 @@ footer {
     }
     table {
         display: block;
-        overflow-x: auto; /* للسماح بالتمرير الجانبي على الموبايل */
+        overflow-x: auto; 
     }
 }
