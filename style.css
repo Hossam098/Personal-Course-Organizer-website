@@ -1,0 +1,152 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+    background-color: #f0f2f5;
+    color: red;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #2c3e50; /* لون موحد للموقع */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #34495e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    transition: 0.4s; /* تأثير الانتقال */
+}
+
+/* Hover Effects */
+nav ul li a:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    min-height: 75vh;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Table Styles - My Courses */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* تأثير المرور على الصفوف */
+}
+
+/* Form Styles - Add Course & Contact */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px); /* تأثير بسيط عند الضغط */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+    table {
+        display: block;
+        overflow-x: auto; /* للسماح بالتمرير الجانبي على الموبايل */
+    }
+}

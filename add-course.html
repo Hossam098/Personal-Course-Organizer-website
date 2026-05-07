@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Add Course</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">My Courses</a></li>
+            <li><a href="add-course.html">Add Course</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Enter Course Details</h2>
+            <form action="#">
+                <label for="cname">Course Name:</label>
+                <input type="text" id="cname" placeholder="Course Name" required>
+
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" placeholder="Name of Instructor" required>
+
+                <label for="hours">Credit Hours:</label>
+                <input type="number" id="hours" min="0" placeholder="e.g. 40" required>
+
+                <label for="notes">Notes:</label>
+                <textarea id="notes" rows="4" placeholder="Additional details..."></textarea>
+
+                <button type="submit">Add Course</button>
+            </form>
+        </section>
+    </main>
+    <footer><p> Organized by Mahmoud Ahmed Karam </p> <p> id : 20250954 </p></footer>
+   
+</body>
+</html>
